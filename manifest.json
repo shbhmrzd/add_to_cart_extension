@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Walmart Grocery Add to Cart",
+  "description": "This extension adds the items to Walmart Grocery cart for ready shopping ",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "cart.png"
+  }
+}

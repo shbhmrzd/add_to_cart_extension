@@ -3,6 +3,9 @@ function isEmpty(str) {
     return (!str || 0 === str.length);
 }
 
+//While sending message from content.js we can just send the message, popup.js is listening to it
+
+
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         if(request.message === "get_selection"){

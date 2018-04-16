@@ -41,10 +41,11 @@ chrome.runtime.onMessage.addListener(
                     },
                     error : function(errorText) {
                         console.log("failure in get call");
-                        document.getElementById("loading").style.width = "100px";
-                        document.getElementById("loading").style.height = "70px";
-                        document.getElementById("loading").style.background = "#FFFF00";
-                        $('#loading').html("Sorry, this service is not available now");
+                        console.log(errorText)
+                        // document.getElementById("loading").style.width = "100px";
+                        // document.getElementById("loading").style.height = "70px";
+                        // document.getElementById("loading").style.background = "#FFFF00";
+                        // $('#loading').html("Sorry, this service is not available now");
                     }
                 }
             );
@@ -77,10 +78,11 @@ chrome.runtime.onMessage.addListener(
                     },
                     error : function(errorText) {
                         console.log("failure in get call");
-                        document.getElementById("loading").style.width = "100px";
-                        document.getElementById("loading").style.height = "70px";
-                        document.getElementById("loading").style.background = "#ffc220";
-                        $('#loading').html("Sorry, this service is not available now");
+                        console.log(errorText);
+                        //document.getElementById("loading").style.width = "100px";
+                        //document.getElementById("loading").style.height = "70px";
+                        //document.getElementById("loading").style.background = "#ffc220";
+                        //$('#loading').html("Sorry, this service is not available now");
                     }
                 }
             );

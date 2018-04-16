@@ -33,6 +33,8 @@ chrome.runtime.onMessage.addListener(
                         var parent = document.getElementById("loading");
                         var child = document.getElementById("loader");
                         parent.removeChild(child);
+                        child = document.getElementById("text-loader");
+                        parent.removeChild(child)
                         $('#loading').append("<a color=#0000A0 font-weight=\"bold\" href=\""+dest_url+"\" target=\"_blank\"> Cart</a>");
                     },
                     error : function(errorText) {
@@ -66,6 +68,8 @@ chrome.runtime.onMessage.addListener(
                         var parent = document.getElementById("loading");
                         var child = document.getElementById("loader");
                         parent.removeChild(child);
+                        child = document.getElementById("text-loader");
+                        parent.removeChild(child)
                         $('#loading').append("<a color=#0000A0 font-weight=\"bold\" href=\""+dest_url+"\" target=\"_blank\"> Cart</a>");
                     },
                     error : function(errorText) {

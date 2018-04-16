@@ -28,15 +28,16 @@ chrome.runtime.onMessage.addListener(
             $.ajax({url: req_url, type: 'GET',
                     success: function(result){
                         console.log("success in get call");
-                        document.getElementById("loading").style.width = "50px";
-                        document.getElementById("loading").style.height = "30px";
-                        document.getElementById("loading").style.background = "#FFFF00";
+                        document.getElementById("loading").style.width = "70px";
+                        document.getElementById("loading").style.height = "50px";
+                        // document.getElementById("loading").style.background = "#ffc220";
                         var parent = document.getElementById("loading");
                         var child = document.getElementById("loader");
                         parent.removeChild(child);
-                        child = document.getElementById("text-loader");
-                        parent.removeChild(child)
-                        $('#loading').append("<a color=#0000A0 font-weight=\"bold\" href=\""+dest_url+"\" target=\"_blank\"> Cart</a>");
+                        // child = document.getElementById("text-loader");
+                        // parent.removeChild(child)
+                        $('#loading').append("<a title='checkout' color=#0000A0 font-weight=\"bold\" href=\""+dest_url+"\" target=\"_blank\"> " +
+                            "<img src='checkout.png' width='66px' height='48px' title='checkout'/></a>");
                     },
                     error : function(errorText) {
                         console.log("failure in get call");
@@ -63,21 +64,22 @@ chrome.runtime.onMessage.addListener(
             $.ajax({url: req_url, type: 'GET',
                     success: function(result){
                         console.log("success in get call");
-                        document.getElementById("loading").style.width = "50px";
-                        document.getElementById("loading").style.height = "30px";
-                        document.getElementById("loading").style.background = "#FFFF00";
+                        document.getElementById("loading").style.width = "70px";
+                        document.getElementById("loading").style.height = "50px";
+                        // document.getElementById("loading").style.background = "#ffc220";
                         var parent = document.getElementById("loading");
                         var child = document.getElementById("loader");
                         parent.removeChild(child);
-                        child = document.getElementById("text-loader");
-                        parent.removeChild(child)
-                        $('#loading').append("<a color=#0000A0 font-weight=\"bold\" href=\""+dest_url+"\" target=\"_blank\"> Cart</a>");
+                        // child = document.getElementById("text-loader");
+                        // parent.removeChild(child)
+                        $('#loading').append("<a title='checkout' color=#0000A0 font-weight=\"Tahoma\" href=\""+dest_url+"\" target=\"_blank\"> " +
+                            "<img src='checkout.png' width='66px' height='48px' title='checkout'/></a>");
                     },
                     error : function(errorText) {
                         console.log("failure in get call");
                         document.getElementById("loading").style.width = "100px";
                         document.getElementById("loading").style.height = "70px";
-                        document.getElementById("loading").style.background = "#FFFF00";
+                        document.getElementById("loading").style.background = "#ffc220";
                         $('#loading').html("Sorry, this service is not available now");
                     }
                 }

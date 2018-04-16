@@ -36,7 +36,7 @@ chrome.runtime.onMessage.addListener(
                         parent.removeChild(child);
                         // child = document.getElementById("text-loader");
                         // parent.removeChild(child)
-                        $('#loading').append("<a title='checkout' color=#0000A0 font-weight=\"bold\" href=\""+dest_url+"\" target=\"_blank\"> " +
+                        $('#loading').append("<a title='checkout' color=#0000A0 font-weight=\"bold\" href=\""+result+"\" target=\"_blank\"> " +
                             "<img src='checkout.png' width='66px' height='48px' title='checkout'/></a>");
                     },
                     error : function(errorText) {
@@ -73,7 +73,7 @@ chrome.runtime.onMessage.addListener(
                         parent.removeChild(child);
                         // child = document.getElementById("text-loader");
                         // parent.removeChild(child)
-                        $('#loading').append("<a title='checkout' color=#0000A0 font-weight=\"Tahoma\" href=\""+dest_url+"\" target=\"_blank\"> " +
+                        $('#loading').append("<a title='checkout' color=#0000A0 font-weight=\"Tahoma\" href=\""+result+"\" target=\"_blank\"> " +
                             "<img src='checkout.png' width='66px' height='48px' title='checkout'/></a>");
                     },
                     error : function(errorText) {
